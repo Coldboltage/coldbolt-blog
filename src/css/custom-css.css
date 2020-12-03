@@ -1,0 +1,75 @@
+header {
+  margin-bottom: 40px;
+}
+
+#name {
+  margin-bottom: 3px;
+}
+
+#intro-left {
+  padding-right: 100px;
+}
+
+.myself {
+  line-height: 1.4;
+  word-spacing: 2.3px;
+  font-size: 14px;
+}
+
+
+#intro-right {
+  padding-left: 100px;
+  border-left: 1px rgba(0, 0, 0, 0.205) solid
+}
+
+/* Post Style */
+.post-list {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.post-list > .post-title {
+  font-weight: 600;
+}
+
+.post-list > .post-date {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffa600;
+}
+
+.post-list > .post-content {
+  line-height: 1.6;
+  word-spacing: 2.5px;
+  font-size: 16px;
+}
+
+div.gatsby-image-wrapper {
+  width: 150px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1050px;
+  width: 60%;
+}
+
+#town {
+  margin-top: 3px;
+  margin-bottom: 35px;
+}
+
+#skills-qualities {
+  margin-bottom: 35px;
+}
+
+#skills-qualities li{
+  margin-bottom: 5px;
+}
+
+.page-footer {
+  margin-top: 100px;
+  text-align: center;
+  padding: 20px
+}
