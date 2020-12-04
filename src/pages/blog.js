@@ -5,9 +5,10 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import BlogPostList from "../components/BlogPostList"
 
-const blog = ({ data }) => {
+const Blog = ({ data }) => {
     return (
         <Layout>
+            <SEO title="Blog" description="Do you want to know more about Alan Reid? Here's the place to find his daily thoughts per day"/>
             <div className="container">
                 <div className="blog-header">
                     <h1 className="blog-title" style={{ textAlign: "center" }}>Blog</h1>
@@ -49,4 +50,4 @@ export const query = graphql`
   }
 `
 
-export default blog
+export default Blog
