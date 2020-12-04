@@ -1,5 +1,5 @@
 ---
-slug: "/blog/my-third-post"
+slug: "my-third-post"
 date: "2020-12-03"
 title: "Creating my first real component"
 ---
