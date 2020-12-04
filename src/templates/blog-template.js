@@ -1,10 +1,11 @@
 import React from 'react'
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Img from "gatsby-image"
 import "../css/blog-template.css"
 
 const BlogTemplate = ({ data }) => {
-    const { blog: { html, frontmatter: { date, title } } } = data
+    const { blog: { html, frontmatter: { date, title, image } } } = data
     return (
         <Layout>
             <div className="blog-container">
@@ -12,7 +13,10 @@ const BlogTemplate = ({ data }) => {
                     <h1 className="blog-title" style={{ textAlign: "center" }}>{title}</h1>
                     <h5 className="center">{date}</h5>
                 </div>
-                <p dangerouslySetInnerHTML={{ __html: html }}></p>
+                <div id="blog-featured-image">
+                    <Img id="featured-image" fluid={image.childImageSharp.fluid}/>
+                </div>
+                <p className="blog-p" dangerouslySetInnerHTML={{ __html: html }}></p>
             </div>
 
         </Layout>
@@ -26,6 +30,13 @@ export const query = graphql`
             frontmatter {
                 date(formatString: "DD MMMM YYYY")
                 title
+                image {
+                    childImageSharp {
+                      fluid {
+                        ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                      }
+                    }
+                }
             }
         }
     }

@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 const PostList = () => {
   const data = useStaticQuery(graphql`
@@ -10,6 +10,7 @@ const PostList = () => {
           frontmatter {
             title
             date(formatString: "DD MMM YYYY")
+            slug
           }
         }
       }
@@ -19,10 +20,10 @@ const PostList = () => {
   const { allMarkdownRemark: { posts } } = data;
 
     const postList = posts.map((post) => {
-        const {excerpt, frontmatter:{date, title}} = post
+        const {excerpt, frontmatter:{date, title, slug}} = post
         return (
-            <div className="post-list">
-                <h5 className="post-title">{title}</h5>
+            <div className="new-post">
+                <Link to={`blogs/${slug}`} className="post-title">{title}</Link>
                 <p className="post-date">{date}</p>
                 <p dangerouslySetInnerHTML={{ __html: excerpt }} className="post-content"></p>
             </div>
