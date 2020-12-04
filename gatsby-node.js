@@ -23,7 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
     // Function to create pages
     createPage({
       // The path to which the page will be created
-      path: `blogs/${blog.frontmatter.slug}`,
+      path: `blog/${blog.frontmatter.slug}`,
       // The template that will be used
       component: path.resolve(`src/templates/blog-template.js`),
       // Passing on information to the page as identifier. 

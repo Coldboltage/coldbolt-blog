@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
       <div className="nav-wrapper container">
         <Link to="/" className="brand-logo">Coldbolts Blog</Link>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
-          <li><Link to="/blogs">Blog</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
           <li><a href="https://twitter.com/itscoldbolt">Twitter</a></li>
           <li><a href="https://coldboltseo.com">ColdboltSEO</a></li>
           <li><a href to="https://github.com/Coldboltage/">Github</a></li>

@@ -46,10 +46,14 @@ header {
   margin-top: 5px
 }
 
-.new-post .post-content {
+.new-post .post-content, .grid .post-content {
   line-height: 1.6;
   word-spacing: 2.5px;
-  font-size: 16px;
+  font-size: 16px !important;
+}
+
+.grid .post-content:first-child {
+  margin-top: 0px;
 }
 
 div.gatsby-image-wrapper {

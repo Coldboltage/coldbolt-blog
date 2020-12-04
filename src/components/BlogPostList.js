@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
-const PostList = () => {
+const BlogPostList = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
@@ -23,9 +23,8 @@ const PostList = () => {
         const {excerpt, frontmatter:{date, title, slug}} = post
         return (
             <div className="new-post">
-                <Link to={`blog/${slug}`} className="post-title">{title}</Link>
+                <Link to={`${slug}`} className="post-title">{title}</Link>
                 <p className="post-date">{date}</p>
-                <p dangerouslySetInnerHTML={{ __html: excerpt }} className="post-content"></p>
             </div>
     )
   });
@@ -36,5 +35,5 @@ const PostList = () => {
   )
 }
 
-export default PostList
+export default BlogPostList
 
