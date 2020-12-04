@@ -2,6 +2,7 @@
 slug: "my-second-post"
 date: "2020-11-26"
 title: "My second blog post"
+image: "../images/blog-post-2.jpg"
 ---
 
 I'm baby aesthetic chicharrones irony fanny pack hella chartreuse neutra umami DIY craft beer cloud bread. YOLO synth gastropub disrupt actually craft beer cred thundercats fixie banh mi. Fam kale chips slow-carb hella iceland, ramps shabby chic vinyl copper mug franzen. Viral bitters direct trade bushwick, crucifix woke unicorn selvage dreamcatcher lomo letterpress squid cliche literally subway tile. Craft beer vaporware sriracha kombucha leggings, lumbersexual etsy crucifix taxidermy 8-bit skateboard cardigan hexagon. 8-bit meh hexagon ethical farm-to-table. Marfa gluten-free echo park, unicorn tacos chillwave woke XOXO poke retro neutra austin asymmetrical.

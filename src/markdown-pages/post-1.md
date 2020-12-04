@@ -2,6 +2,7 @@
 slug: "my-first-post"
 date: "2020-11-25"
 title: "My first blog post"
+image: "../images/blog-post-1.jpg"
 ---
 
 This is going to be my first blog post for the site. I'm not going to lie. I have been dreading trying to make this site. The fear of failure and thinking that all the time I've put into this, has been a waste of time. As I write this, I feel more confident that ever that I'm getting closer to the person I want to be. I'm not a mega programmer or anything like that, but I'm getting there and I think that's all that needed.
