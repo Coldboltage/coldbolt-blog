@@ -16,7 +16,7 @@ const BlogTemplate = ({ data }) => {
                 <div id="blog-featured-image">
                     <Img id="featured-image" fluid={image.childImageSharp.fluid}/>
                 </div>
-                <p className="blog-p" dangerouslySetInnerHTML={{ __html: html }}></p>
+                <div className="blog-p" dangerouslySetInnerHTML={{ __html: html }}></div>
             </div>
 
         </Layout>
