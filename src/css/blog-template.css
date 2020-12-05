@@ -35,3 +35,7 @@
 .blog-right-side {
     padding-left: 100px;
 }
+
+.gatsby-resp-image-image {
+    padding: 20px;
+ }
