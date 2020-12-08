@@ -4,7 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 const PostList = () => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+      allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: 5) {
         posts: nodes {
           excerpt(format: PLAIN, pruneLength: 600)
           frontmatter {
