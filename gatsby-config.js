@@ -38,10 +38,14 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-unwrap-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 400,
+              maxWidth: 800,
+              withWebp: true,
+              tracedSVG: true,
+              wrapperStyle: "margin: 20px"
             }
           },
           {
@@ -49,7 +53,7 @@ module.exports = {
             options: {
               styleAttributes: true,
             }
-          }
+          },
         ]
       }, 
     },
