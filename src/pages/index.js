@@ -23,25 +23,29 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" description="This is a test description of the front page" />
-      <div className="container row">
-        <div className="col s4" id="intro-left">
-          <Image style={{width: "150px"}}/>
-          <h5 id="name">Alan Reid</h5>
-          <p id="town">Bangor, Northern Ireland</p>
-          <ul id="skills-qualities">
-            <li>Esports SEO</li>
-            <li>Esports Manager</li>
-            <li>GatsbyJS</li>
-            <li>React</li>
-            <li>Meteor</li>
-          </ul>
-          <p className="myself">I am an Esports SEO of 8 years but an aspiring self taught frontend developer. It has been my dream to slowly become a website developer and this website will document these events</p>
-          <p className="myself">It is not enough to know how to do SEO but actually be able to program what is needed to create the solution or be able to know how it's to be done.</p>
-          <p className="myself">I'm honestly not too sure what I'm going to write in this blog. I'm guessing I'll write about my life here and develop myself as a web developer, seo, manager and person. I'm glad though I've got to this stage. I'll do my best to update this as I go along.</p>
+      <div className="container grid">
+        <div className="user-grid" id="intro-left">
+          <div className="">
+            <Image style={{ width: "150px" }} />
+            <h5 id="name">Alan Reid</h5>
+            <p id="town">Bangor, Northern Ireland</p>
+            <ul id="skills-qualities">
+              <li>Esports SEO</li>
+              <li>Esports Manager</li>
+              <li>GatsbyJS</li>
+              <li>React</li>
+              <li>Meteor</li>
+            </ul>
+          </div>
+          <div>
+            <p className="myself">I am an Esports SEO of 8 years but an aspiring self taught frontend developer. It has been my dream to slowly become a website developer and this website will document these events</p>
+            <p className="myself">It is not enough to know how to do SEO but actually be able to program what is needed to create the solution or be able to know how it's to be done.</p>
+            <p className="myself">I'm honestly not too sure what I'm going to write in this blog. I'm guessing I'll write about my life here and develop myself as a web developer, seo, manager and person. I'm glad though I've got to this stage. I'll do my best to update this as I go along.</p>
+          </div>
         </div>
-        <div className="col s8 " id="intro-right">
+        <div className="" id="intro-right">
           {/* {postList} */}
-          <PostList/>
+          <PostList />
         </div>
 
       </div>

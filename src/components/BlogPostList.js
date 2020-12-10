@@ -20,7 +20,7 @@ const BlogPostList = () => {
   const { allMarkdownRemark: { posts } } = data;
 
     const postList = posts.map((post) => {
-        const {excerpt, frontmatter:{date, title, slug}} = post
+        const {frontmatter:{date, title, slug}} = post
         return (
             <div className="new-post">
                 <Link to={`${slug}`} className="post-title">{title}</Link>

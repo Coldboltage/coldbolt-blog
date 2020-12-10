@@ -6,8 +6,13 @@ header {
   margin-bottom: 3px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 #intro-left {
-  padding-right: 100px;
+  padding-right: 50px;
 }
 
 .myself {
@@ -18,8 +23,19 @@ header {
 
 
 #intro-right {
-  padding-left: 100px;
+  padding-left: 50px;
   border-left: 1px rgba(0, 0, 0, 0.205) solid
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+}
+
+/* Profile Picture */
+.profile {
+  max-width: 150px;
 }
 
 /* Post Style */
@@ -46,7 +62,7 @@ header {
   margin-top: 5px
 }
 
-.new-post .post-content, .grid .post-content {
+.new-post .post-content {
   line-height: 1.6;
   word-spacing: 2.5px;
   font-size: 16px !important;
@@ -56,14 +72,14 @@ header {
   margin-top: 0px;
 }
 
-div.gatsby-image-wrapper {
+.container.row div.gatsby-image-wrapper {
   width: 150px;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1050px;
-  width: 60%;
+  width: 90%;
 }
 
 #town {
@@ -83,4 +99,71 @@ div.gatsby-image-wrapper {
   margin-top: 100px;
   text-align: center;
   padding: 20px
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  #intro-left {
+    padding: 0 10px 5px;
+    padding-top: 0px;
+  }
+
+  #intro-left #town {
+    margin-bottom: 15px;
+  }
+  
+  #intro-left #skills-qualities {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #intro-right {
+    border: none
+  }
+
+  #intro-right .new-post .post-content {
+    display: none
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .grid {
+      grid-template-columns: 1fr;
+  }
+
+  .user-grid {
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+
+  #skills-qualities li {
+    margin-bottom: 0px;
+  }
+
+  .myself:first-child {
+    margin-top: 0px;
+  }
+
+  #intro-right {
+    padding-left: 0px;
+  }
+
+  .user-grid {
+    border-bottom: 1px rgba(0, 0, 0, 0.205) solid;
+    padding-bottom: 10px;
+  }
+
+  #intro-right {
+    padding: 10px
+  }
+}
+
+@media only screen and (max-width: 400px)  {
+  .myself:nth-child(3) {
+    display: none;
+  }
+  .page-footer {
+    margin-top: 0px;
+  }
+  
 }
