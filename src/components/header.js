@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
           <li><Link to="/blog">Blog</Link></li>
           <li><a href="https://twitter.com/itscoldbolt">Twitter</a></li>
           <li><a href="https://coldboltseo.com">ColdboltSEO</a></li>
-          <li><a href to="https://github.com/Coldboltage/">Github</a></li>
+          <li><a href="https://github.com/Coldboltage/">Github</a></li>
         </ul>
       </div>
     </nav>
