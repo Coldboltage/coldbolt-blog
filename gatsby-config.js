@@ -54,12 +54,15 @@ module.exports = {
       }, 
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        fonts: [
-          `Cardo`,
-        ],
-        display: 'swap'
+        fonts: {
+          google:[
+            {
+              family: `Cardo`,
+            }
+          ]
+        }
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
