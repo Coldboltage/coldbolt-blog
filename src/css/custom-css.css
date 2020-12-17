@@ -6,6 +6,41 @@ header {
   margin-bottom: 40px;
 }
 
+/* Nav */
+.navBar {
+  height: 60px;
+  background-color: black;
+  margin-bottom: 40px;
+}
+
+.brand-logo {
+  font-size: 30px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.navBar > .flex {
+  justify-content: space-between;
+}
+
+.rightSide #rightLinks li a, .leftSide a{
+  color: white;
+}
+
+#rightLinks {
+  margin: 0;
+  display: flex;
+}
+
+#rightLinks > li {
+  margin-right: 25px;
+}
+
 #name {
   margin-bottom: 3px;
 }
