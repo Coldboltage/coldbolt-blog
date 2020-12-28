@@ -12,9 +12,9 @@ const header = () => {
                     <div className="rightSide">
                         <ul id="rightLinks">
                             <li><Link to="/blog">Blog</Link></li>
-                            <li className="nav-link"><a href="https://twitter.com/itscoldbolt">Twitter</a></li>
-                            <li className="nav-link"><a href="https://coldboltseo.com">ColdboltSEO</a></li>
-                            <li className="nav-link"><a href="https://github.com/Coldboltage/">Github</a></li>
+                            <li className="nav-link"><a href="https://twitter.com/itscoldbolt" target="_blank" rel="noreferrer">Twitter</a></li>
+                            <li className="nav-link"><a href="https://coldboltseo.com" target="_blank" rel="noreferrer">ColdboltSEO</a></li>
+                            <li className="nav-link"><a href="https://github.com/Coldboltage/" target="_blank" rel="noreferrer">Github</a></li>
                         </ul>
                     </div>
                 </div>
