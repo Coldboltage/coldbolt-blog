@@ -1,6 +1,6 @@
 ---
 slug: "one-hour-a-day"
-date: "2021-12-17"
+date: "2021-01-17"
 title: "Code one hour a day"
 image: "../images/code-everyday.jpg"
 ---
