@@ -19,19 +19,19 @@ const BlogPostList = () => {
 
   const { allMarkdownRemark: { posts } } = data;
 
-    const postList = posts.map((post) => {
-        const {frontmatter:{date, title, slug}} = post
-        return (
-            <div className="new-post">
-                <Link to={`${slug}`} className="post-title">{title}</Link>
-                <p className="post-date">{date}</p>
-            </div>
+  const postList = posts.map((post) => {
+    const { frontmatter: { date, title, slug } } = post
+    return (
+      <div className="new-post">
+        <Link to={`${slug}`} className="post-title">{title}</Link>
+        <p className="post-date">{date}</p>
+      </div>
     )
   });
   return (
-      <div>
-        {postList}
-      </div>
+    <div>
+      {postList}
+    </div>
   )
 }
 
