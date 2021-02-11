@@ -11,6 +11,7 @@ const header = () => {
                     </div>
                     <div className="rightSide">
                         <ul id="rightLinks">
+                            <li><Link to="/about">About</Link></li>
                             <li><Link to="/blog">Blog</Link></li>
                             <li className="nav-link"><a href="https://twitter.com/itscoldbolt" target="_blank" rel="noreferrer">Twitter</a></li>
                             <li className="nav-link"><a href="https://coldboltseo.com" target="_blank" rel="noreferrer">ColdboltSEO</a></li>

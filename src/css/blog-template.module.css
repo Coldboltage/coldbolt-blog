@@ -13,7 +13,6 @@
     padding-bottom: 20px;
 }
 
-
 .center, .blogTitle {
     text-align: center;
 }
@@ -23,7 +22,6 @@
     max-width: 800px ;
     width: 100%;
 }
-
 
 .grid {
     display: grid;
