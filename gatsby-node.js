@@ -1,4 +1,6 @@
-const path = require("path")
+const path = require("path");
+// const { paginate } = require('gatsby-awesome-pagination');
+
 
 // create pages dynamically
 // Process to grab createPages. Needs to be Async as it takes time to get.
@@ -17,6 +19,15 @@ exports.createPages = async ({ graphql, actions }) => {
         }
     }
   `)
+
+  // Paginate Function
+  // paginate({
+  //   createPage,
+  //   items: result.data.blogs.nodes,
+  //   itemsPerPage: 5,
+  //   pathPrefix: `/blog`,
+  //   component: path.resolve()
+  // })
 
   // Determine what pages you want build
   result.data.blogs.nodes.forEach(blog => {
