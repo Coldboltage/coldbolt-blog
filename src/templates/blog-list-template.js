@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BlogPostList from "../components/BlogPostList"
 import * as styles from "../css/blog-template.module.css"
-import Pager from "../components/pager"
+import Pager from "../components/Pager"
 
 const BlogListTemplate = ({ data, pageContext }) => {
     return (
