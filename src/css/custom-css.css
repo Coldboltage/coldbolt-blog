@@ -90,23 +90,6 @@ header {
   max-width: 150px;
 }
 
-/* About us Page */
-#test {
-  display: block;
-  margin: 0 auto;
-  max-width: 800px;
-  width: 100%;
-}
-
-.imageFlex {
-  display: flex;
-  align-items: center;
-}
-
-#image-center {
-  display: block;
-}
-
 /* Post Style */
 .new-post {
   border-bottom: 1px solid lightgray;
