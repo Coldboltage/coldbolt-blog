@@ -22,9 +22,9 @@ const Lab = ({ data }) => {
                         const { title, link } = post
                         const fluid = post.featuredImage.node.localFile.childImageSharp.fluid
                         return (
-                            <div key={index}>
+                            <div key={index} className={styles.gridImage}>
                                 <Link to={`https://coldboltseo.com${post.link}`}>
-                                    <Image fluid={fluid} />
+                                    <Image fluid={fluid} className={styles.test}/>
                                     {post.title}
                                 </Link>
                             </div>
