@@ -3,12 +3,14 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import styles from "../css/blog-template.module.css"
+import SEO from "../components/seo"
 
 const WordPressLab = ({ data }) => {
     const { wpPost: { title, date, content:html } } = data
     const fluid = data.wpPost.featuredImage.node.localFile.childImageSharp.fluid
     return (
         <Layout>
+            <SEO title={title}></SEO>
             <div className={styles.blogContainer}>
                 <div className={styles.blogHeader}>
                     <h1 className={styles.blogTitle}>{title}</h1>
