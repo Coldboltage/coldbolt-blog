@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import styles from "../css/blog-template.module.css"
@@ -16,6 +16,7 @@ const WordPressLab = ({ data }) => {
                     <h1 className={styles.blogTitle}>{title}</h1>
                     <h5 className={styles.center}>{date}</h5>
                 </div>
+                <h6><Link to="/lab/wordpress-source">&#60; WordPress Sourcing</Link></h6>
                 <div id={styles.blogFeaturedImage}>
                     <Img id={styles.blogFeaturedImage} fluid={fluid}/>
                 </div>
@@ -37,9 +38,9 @@ export const query = graphql`
                 childImageSharp {
                 fluid {
                     ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                    }
                 }
                 }
-            }
             }
         }
         content
