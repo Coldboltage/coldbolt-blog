@@ -9,13 +9,13 @@ const AboutPage = ({ data }) => {
   const { profilePicture: { childImageSharp: { fluid } } } = data
   return (
     <Layout>
-      <div className="container">
+      <div className={styles.blogContainer}>
         <h1 className="blog-title">About Page</h1>
-        <div id={styles.test}>
-          <Img fluid={fluid} />
+        <div className={styles.test}>
+          <Img className={styles.test} fluid={fluid} />
         </div>
-        <div id="introduction">
-          <p class="post-content">My name is Alan Reid, 29, and I'm from Bangor Northern Ireland. I'm slowly getting the hang of developing but I think what I'm looking to get a better grasp of, is my control of life. I love to help and I love to get things done. When I see something I can get done now, I usually work on that so to finish it asap. This slows my progress as a developer down and so I have decided on my 6am wakes again. It's helping, no one is bothering me at my time of need. Maybe this is just something weird that I have in my head but honestly, I'm slowing getting better. </p>
+        <div id={styles.introduction}>
+          <p class="post-content" id>My name is Alan Reid, 29, and I'm from Bangor Northern Ireland. I'm slowly getting the hang of developing but I think what I'm looking to get a better grasp of, is my control of life. I love to help and I love to get things done. When I see something I can get done now, I usually work on that so to finish it asap. This slows my progress as a developer down and so I have decided on my 6am wakes again. It's helping, no one is bothering me at my time of need. Maybe this is just something weird that I have in my head but honestly, I'm slowing getting better. </p>
           <p className="post-content">I'm not the best in keeping to my plans but the one thing that I did learn when I was younger, must have been a weight lifter from what I can remember, is to do something. While we can't be perfect to keep to our plans, doing something is better than nothing and it's the one thing I have to keep doing better in. We aren't perfect and we certainly will fail but getting back on the horse to do it all over again is important and it's something I have to keep in mind. I'll do my best to update this website more and more to get better per day. It's the right thing to do. </p>
           <div className={styles.gridTwo}>
             <div>
@@ -38,7 +38,7 @@ const AboutPage = ({ data }) => {
             </div>
           </div>
           <div id="wellPlayed">
-            <h3 className={styles.title} style={{textAlign: "center"}}>Well played</h3>
+            <h3 className={styles.title}>Well played</h3>
             <p className="post-content">For those that got down to this point, thanks. I don't know if you read about my time within esports or my professional life, but I thank you for getting to this point. Ultimately for me, my esports experience and my professional experience collides together in the ability to make this site, to SEO it and make it into something. Maybe I don't want this site to be known, I probably don't so I'll add a robot.txt noindex directive or something, to make sure Google never finds this page for others, but knowing I can build a kickass website which I can still things of, while </p>
             <p className="post-content">While this site doesn't look like much, it's the proof that I can somewhat design okay and get something up. CSS/GRID has been a great tool that I've been able to understand quickly. While Javascript is still not that easy with me, I can make JS/React/Gatsby work. React as the UI tooling to reuse things and Gatsby as the fundamentals to build amazingly complaint SEO sites.</p>
             <p className="post-content">What I believe is next, is to make sure that I prove to people that I know what's going on. To build a brand where people can see that I am talking and showing what I know. To build a site with API connections which are amazingly quick and they can buy stuff. To mess around with chatbots but I need to slowly progress each day. While I write this, I grow more confident in my abilities but now it's about doing this everyday. I need to do that. It's my future. </p>
