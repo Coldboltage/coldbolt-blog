@@ -9,18 +9,20 @@
 }
 
 .blogContainer {
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     margin: auto
 }
 
 /* About us Page */
 
-
-
-#introduction {
-    padding-top: 50px;
+#test {
+    max-width: 800px;
 }
+
+/* #introduction {
+    padding-top: 20px;
+} */
 
 #test {
     display: block;
