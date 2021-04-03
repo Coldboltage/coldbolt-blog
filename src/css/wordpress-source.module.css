@@ -11,3 +11,19 @@
 .test {
     height: 200px;
 }
+
+@media only screen and (max-width: 800px) {
+    .gridThree {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .gridThree {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
