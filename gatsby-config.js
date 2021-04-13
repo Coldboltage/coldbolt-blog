@@ -72,7 +72,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: `https://coldboltseo.com/graphql`,
+        url: `https://coldboltseobackup.com/graphql`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

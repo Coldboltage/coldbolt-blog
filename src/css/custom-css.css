@@ -132,6 +132,7 @@ header {
   margin: 0 auto;
   max-width: 1050px;
   width: 90%;
+  /* min-height: 100vh; */
 }
 
 #town {

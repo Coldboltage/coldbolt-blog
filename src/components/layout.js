@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
     <>
       <Header/>
       <div>
-        <main>{children}</main>
+        <main className="pageHeight">{children}</main>
         <footer className="page-footer black">
           © {new Date().getFullYear()}, Built with
           {` `}
