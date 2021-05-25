@@ -2,7 +2,7 @@
 slug: "rest-is-good"
 date: "2021-05-25"
 title: "Rest is good"
-image: "../images/rest-sunset.png"
+image: "../images/rest-sunset.jpg"
 ---
 I wasn't so bad this time was I. I gave myself quite a break this time. I worried way too much about what to do with ColdboltSEO and put myself away for a bit. That was a bit dumb. I've got some sort of an idea of what to do with ColdboltSEO. I'll write something about it tomorrow so I can get myself on the way with it. It's important as this is the project with others, that I'll be trying to get things sorted with via traveling. 
 
