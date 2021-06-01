@@ -13,6 +13,10 @@ const Lab = () => {
             <div className="container "> */}
                 <ul>
                     <li>
+                        <Link to="/lab/spacex-graphql">SpaceX and GraphQL</Link>
+                        <p>I've noticed the GraphQL properties that I make are very organised. Make a post and get the data from it. A lot of API's work differently and I'll need to get used to how they run </p>
+                    </li>
+                    <li>
                         <Link to="/lab/axios-api">Axios API</Link>
                         <p>I haven't done API stuff for ages so I'm going to have to give this a shot right?</p>
                     </li>

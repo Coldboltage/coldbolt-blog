@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import styles from "../css/blog-template.module.css"
@@ -13,12 +13,14 @@ const BlogTemplate = ({ data }) => {
                     <h1 className={styles.blogTitle}>{title}</h1>
                     <h5 className={styles.center}>{date}</h5>
                 </div>
+                <a className="waves-effect waves-light btn-small" onClick={() => navigate(-1)}>Back</a>
+                
+
                 <div id={styles.blogFeaturedImage}>
                     <Img id={styles.blogFeaturedImage} fluid={image.childImageSharp.fluid}/>
                 </div>
                 <div className={styles.blogP} dangerouslySetInnerHTML={{ __html: html}}></div>
             </div>
-
         </Layout>
     )
 }
