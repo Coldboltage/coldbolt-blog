@@ -10,8 +10,12 @@ const Lab = () => {
             <div className="container blog-title">
                 <h1>The Lab</h1>
             </div>
-            <div className="container">
+            <div className="container ">
                 <ul>
+                    <li>
+                        <Link to="/lab/axios-api">Axios API</Link>
+                        <p>I haven't done API stuff for ages so I'm going to have to give this a shot right?</p>
+                    </li>
                     <li>
                         <Link to="/lab/wordpress-source">Wordpress source</Link>
                         <p>I'm going to try to figure out how to source posts from my ColdboltSEO site. Should be interesting</p>
