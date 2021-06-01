@@ -8,7 +8,7 @@ const BlogTemplate = ({ data }) => {
     const { blog: { html, frontmatter: { date, title, image } } } = data
     return (
         <Layout>
-            <div className={styles.blogContainer}>
+            <div className={`${styles.blogContainer}`} id="page-container" >
                 <div className={styles.blogHeader}>
                     <h1 className={styles.blogTitle}>{title}</h1>
                     <h5 className={styles.center}>{date}</h5>

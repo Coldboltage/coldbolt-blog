@@ -132,7 +132,14 @@ header {
   margin: 0 auto;
   max-width: 1050px;
   width: 90%;
+  /* position: relative;
+  min-height: 100vh; */
   /* min-height: 100vh; */
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
 #town {

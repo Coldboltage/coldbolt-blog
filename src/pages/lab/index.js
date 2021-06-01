@@ -7,10 +7,10 @@ const Lab = () => {
     return (
         <Layout>
             <SEO title="Lab" description="This is where I test the stuff that I think I can make work for the site. I have no idea what I'm doing here"></SEO>
-            <div className="container blog-title">
-                <h1>The Lab</h1>
-            </div>
-            <div className="container ">
+            <div className="container" id="page-container">
+                <h1 className="blog-title">The Lab</h1>
+            {/* </div>
+            <div className="container "> */}
                 <ul>
                     <li>
                         <Link to="/lab/axios-api">Axios API</Link>

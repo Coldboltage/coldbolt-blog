@@ -23,7 +23,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" description="This is a test description of the front page" />
-      <div className="container grid">
+      <div className="container grid" id="page-container">
         <div className="user-grid" id="intro-left">
           <div className="">
             <Image style={{ width: "150px" }} />

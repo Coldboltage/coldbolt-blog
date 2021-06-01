@@ -10,18 +10,12 @@ const AxiosApi = () => {
     const apiCall = () => {
         let matchId = textInputRef.current.value;
         console.log(matchId)
-        fetch(`https://euw1.api.riotgames.com/lol/match/v4/matches/${matchId}?api_key=RGAPI-9c874a5b-edfd-4eb5-8a65-4cf5a5696729`,{
-            method: "get",
-            mode: "cors",
-            headers: {
-                "Access-Control-Allow-Origin": "*",
-            }
-        }).then(res => console.log(res))
+        axios(`https://swapi.dev/api/${matchId}`).then(res => answerRef.current.textContent = res.data.name)
     }
 
     return (
         <Layout>
-            <div className="container blog-title">
+            <div className="container blog-title" id="page-container">
                 <h1>Axios API</h1>
                 <p>This is a test to see if I can use the Axios API which I have no idea if I can get work so that'll be good craic.</p>
                 <a id="apiButton" className="waves-effect waves-light btn-small" onClick={apiCall} >Api Call</a>
