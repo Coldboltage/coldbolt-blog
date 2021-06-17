@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@cezarcarvalhaes/gatsby-source-google-sheets": "^2.0.1",
     "axios": "^0.21.1",
     "gatsby": "^2.26.1",
     "gatsby-awesome-pagination": "^0.3.6",
@@ -20,6 +21,7 @@
     "gatsby-remark-image-attributes": "^0.2.8",
     "gatsby-remark-images": "^3.7.0",
     "gatsby-source-filesystem": "^2.6.1",
+    "gatsby-source-google-sheets-flexible": "^1.0.3",
     "gatsby-source-graphql": "^3.6.0",
     "gatsby-source-wordpress": "^5.2.0",
     "gatsby-transformer-remark": "^2.11.1",

@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef} from 'react'
 import Layout from "../../components/layout"
 import axios from "axios"
 

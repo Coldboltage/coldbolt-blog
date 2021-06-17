@@ -54,13 +54,13 @@ module.exports = {
             }
           },
         ]
-      }, 
+      },
     },
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
-          google:[
+          google: [
             {
               family: `Cardo`,
             }
@@ -90,8 +90,8 @@ module.exports = {
       resolve: 'gatsby-plugin-graphql-image',
       options: {
         schemaName: "SpaceX",
-        imageFieldName: "image"
-      }
+        imageFieldName: "image",
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
