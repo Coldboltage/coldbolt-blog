@@ -2,7 +2,7 @@
 slug: "keeping-up-time-life"
 date: "2021-07-20"
 title: "Need to keep up with the programming"
-image: "../images/time-clock-programming.png"
+image: "../images/time-clock-programming.jpg"
 ---
 Time flies and I have to make sure that I don't fail from not programming again. While the last three months have been in some sense, annoying where I have to take care of my father, I know I've been doing the right thing. The only issue is, having to take care of my team while having to do many other things, while having the bad direction of trying to do SEO, was not on the ball. I have learnt to let go off things a lot easier and that's been a good thing. 
 
