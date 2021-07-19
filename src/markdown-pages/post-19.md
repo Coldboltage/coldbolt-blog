@@ -1,0 +1,13 @@
+---
+slug: "spacex-graphql"
+date: "2021-07-19"
+title: "Properly learning ReactJS"
+image: "../images/1280px-React-icon.png"
+---
+Learning GatsbyJS was one of the best things that really happened to me. Learning for me, is very weird. I have to take many different paths to get to the place that I want and because of that, it seems like I sometimes blindly move to different subjects all of the time. How does learning a MeteorJS + ReactJS Udemy help, when I don't finish it and move to GatsbyJS? In the end of the day, while I didn't learn all that I wanted to learn, I was still able to learn enough about ReactJS, to use GatsbyJS, which was able to allow me to learn more about ReactJS, while learning GatsbyJS in the same time. It's been a really strange way to go about things but it seems like I'm now moving to the right direction when it comes to learning ReactJS. I'm fairly confident by learning a lot of GatsbyJS, that I have the simple understanding to know ReactJS and this gives me a lot of hope. 
+
+I'm learning ReactJS now properly using the same Udemy Teacher that taught me a lot about GatsbyJS. I'm not that fantastic with GatsbyJS but all my friends keep telling me that I'm pretty on the ball with what I know. I'm not too sure about that but it's great having friends encouraging me all the way to get better and better. I'm having a far easier time learning ReactJS than I ever did and it's helping me get through the Udemy guide for ReactJS. From there, I hope to have a strong fundemental understanding of ReactJS, so I an move on and learn frameworks that use ReactJS. NextJS is the main reason for this motivation but there's simple concepts with React which I'm missing out on. 
+
+From there, I believe I'm going to look at a Udemy course about Javascript all over again. An updated guide for 2021. A lot of it, I'm sure I'll put the guides through 1.5 speed, watching and listening to it while remembering and catching on a lot of information I already know. As Harry from Viperio would say, callback memory. It's a great idea. When there are things that I'm not too sure about, then I'll properly knuckle down and learn. I'm glad of this. 
+
+I'm writing this from a hospital room, waiting for my father to come out of his 2nd set of Chemo. He was worried coming in and while it can be annoying to have to deal with him, hearing him a lot more calm down the hall, makes me realise that his cancer weighs on him and I have to consider this a lot more. I'm already considerate but to take it personally, that's not need anymore.
