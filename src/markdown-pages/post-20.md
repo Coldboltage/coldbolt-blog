@@ -1,6 +1,6 @@
 ---
-slug: "spacex-graphql"
-date: "2021-07-19"
+slug: "keeping-up-time-life"
+date: "2021-07-20"
 title: "Need to keep up with the programming"
 image: "../images/time-clock-programming.png"
 ---

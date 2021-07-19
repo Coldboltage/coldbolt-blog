@@ -1,5 +1,5 @@
 ---
-slug: "spacex-graphql"
+slug: "reactjs-learning"
 date: "2021-07-19"
 title: "Properly learning ReactJS"
 image: "../images/1280px-React-icon.png"
