@@ -14,8 +14,6 @@ const BlogTemplate = ({ data }) => {
                     <h5 className={styles.center}>{date}</h5>
                 </div>
                 <a className="waves-effect waves-light btn-small" onClick={() => navigate(-1)}>Back</a>
-                
-
                 <div id={styles.blogFeaturedImage}>
                     <Img id={styles.blogFeaturedImage} fluid={image.childImageSharp.fluid}/>
                 </div>
