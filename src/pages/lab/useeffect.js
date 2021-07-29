@@ -18,7 +18,12 @@ const UsingEffect = () => {
     }, [teamName])
 
     const loadData = async () => {
-        const response = await fetch(callOne);
+        const response = await fetch(callOne, {
+            mode: "cors",
+            header: {
+                "Access-Control-Allow-Origin":"*"
+            }
+        });
         const data = await response.json();
         const { current_members: members } = data;
         const playerMembers = members.filter(member => member.role === "player");
@@ -29,9 +34,6 @@ const UsingEffect = () => {
         setPlayerFive(playerMembers[4])
         setTeamName(data.name);
     }
-
-    console.log(players)
-
     return (
         <Layout>
             <div className="container">
