@@ -4,18 +4,18 @@ import Layout from "../../components/layout"
 
 const UsingEffect = () => {
     const [players, setPlayers] = useState([])
-    const [teamName, setTeamName] = useState()
-    const [playerOne, setPlayerOne] = useState()
-    const [playerTwo, setPlayerTwo] = useState()
-    const [playerThree, setPlayerThree] = useState()
-    const [playerFour, setPlayerFour] = useState()
-    const [playerFive, setPlayerFive] = useState()
-    const [lpCalc, setLpCalc] = useState();
+    const [teamName, setTeamName] = useState("")
+    const [playerOne, setPlayerOne] = useState("")
+    const [playerTwo, setPlayerTwo] = useState("")
+    const [playerThree, setPlayerThree] = useState("")
+    const [playerFour, setPlayerFour] = useState("")
+    const [playerFive, setPlayerFive] = useState("")
+    const [lpCalc, setLpCalc] = useState(null);
     let callOne = "https://api.lolpros.gg/es/teams/rogue";
 
     useEffect(() => {
         loadData()
-    }, [])
+    }, [teamName])
 
     const loadData = async () => {
         const response = await fetch(callOne);
