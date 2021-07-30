@@ -74,9 +74,10 @@ module.exports = {
       options: {
         url: `https://coldboltseobackup.com/graphql`,
         schema: {
-          requestConcurrency: 5,
+          requestConcurrency: 4,
           timeout: 240000,
-
+          perPage: 20,
+          previewRequestConcurrency: 2
         }
       },
     },
