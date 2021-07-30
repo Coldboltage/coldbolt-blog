@@ -73,6 +73,11 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         url: `https://coldboltseobackup.com/graphql`,
+        schema: {
+          requestConcurrency: 5,
+          timeout: 60000,
+
+        }
       },
     },
     {
