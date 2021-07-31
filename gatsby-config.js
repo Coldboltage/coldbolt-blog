@@ -70,9 +70,9 @@ module.exports = {
     },
     // Adding WordPress stuff here
     {
-      resolve: `gatsby-source-wordpress`,
+      resolve: "gatsby-source-wordpress",
       options: {
-        url: `https://coldboltseobackup.com/graphql`,
+        url: "https://coldboltseobackup.com/graphql",
         schema: {
           requestConcurrency: 4,
           timeout: 240000,
