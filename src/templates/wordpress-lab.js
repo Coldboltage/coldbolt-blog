@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
-import styles from "../css/blog-template.module.css"
+import * as styles from "../css/blog-template.module.css"
 import SEO from "../components/seo"
 
 const WordPressLab = ({ data }) => {

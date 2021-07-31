@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, navigate } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
-import styles from "../css/blog-template.module.css"
+import * as styles from "../css/blog-template.module.css"
 
 const BlogTemplate = ({ data }) => {
     const { blog: { html, frontmatter: { date, title, image } } } = data

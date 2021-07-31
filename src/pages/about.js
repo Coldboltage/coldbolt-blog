@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 // import styles from "../css/blog-template.module.css"
 import Img from "gatsby-image"
-import styles from "../css/about.module.css"
+import * as styles from "../css/about.module.css"
 
 const AboutPage = ({ data }) => {
   const { profilePicture: { childImageSharp: { fluid } } } = data

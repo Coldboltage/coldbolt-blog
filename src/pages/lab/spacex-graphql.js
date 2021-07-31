@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from "../../components/layout"
 import * as styles from "../../css/spacex.module.css"
 import Image from "gatsby-image"
+import {graphql} from "gatsby"
 
 const SpaceX = ({data:{spacex:{ships}}}) => {
     const filteredShips = ships.filter(ship => ship.imageSharp !== null);
