@@ -3,6 +3,7 @@ slug: "started-to-code-everyday"
 date: "2021-07-30"
 title: "Coding everyday has been good help"
 image: "../images/pexels-shane-aldendorff-1135448.jpg"
+
 ---
 Little bit of house keeping was needed with the backup site for ColdboltSEO. It dawned to me that it's pretty dumb of me to keep using the heavy theme which I bought years ago. Contentberg was great whenever I had little idea how to program. Since then, I've copied enough of the theme I wanted for ColdboltSEO. Technically speaking, the website is ready to be used anytime which is the good thing of WordPress. While I'm using it as my headless CMS, it's nice to know that if I want someone else to run the site, it's technically ready to operate at anytime.
 
