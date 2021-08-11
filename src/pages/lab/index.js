@@ -24,10 +24,10 @@ const Lab = () => {
                         <Link to="/lab/axios-api">Axios API</Link>
                         <p>I haven't done API stuff for ages so I'm going to have to give this a shot right?</p>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/lab/wordpress-source">Wordpress source</Link>
                         <p>I'm going to try to figure out how to source posts from my ColdboltSEO site. Should be interesting</p>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </Layout>

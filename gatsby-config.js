@@ -68,19 +68,20 @@ module.exports = {
         }
       }
     },
-    // Adding WordPress stuff here
-    {
-      resolve: "gatsby-source-wordpress",
-      options: {
-        url: "https://coldboltseobackup.com/graphql",
-        schema: {
-          requestConcurrency: 4,
-          timeout: 240000,
-          perPage: 20,
-          previewRequestConcurrency: 2
-        }
-      },
-    },
+    // Adding WordPress stuff here. 11/08/2021
+    // Decided to comment out wordpress stuff for now. Will migrate another time
+    // {
+    //   resolve: "gatsby-source-wordpress",
+    //   options: {
+    //     url: "https://coldboltseobackup.com/graphql",
+    //     schema: {
+    //       requestConcurrency: 4,
+    //       timeout: 240000,
+    //       perPage: 20,
+    //       previewRequestConcurrency: 2
+    //     }
+    //   },
+    // },
     {
       resolve: "gatsby-source-graphql",
       options: {

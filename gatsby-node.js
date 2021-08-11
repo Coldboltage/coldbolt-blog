@@ -17,11 +17,6 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
-      allWpPost {
-        nodes {
-          uri
-        }
-      }
     }  
   `)
 
@@ -53,19 +48,18 @@ exports.createPages = async ({ graphql, actions }) => {
   })
   
   // Determine what pages you want build
-  result.data.allWpPost.nodes.forEach(post => {
-    console.log(post.uri)
-    // Function to create pages
-    createPage({
-      // The path to which the page will be created
-      // path: `blog/${blog.frontmatter.slug}/`,
-      path: `${post.uri}`,
-      // The template that will be used
-      component: path.resolve(`src/templates/wordpress-lab.js`),
-      // Passing on information to the page as identifier. 
-      context: {
-        uri: post.uri,
-      },
-    })
-  })
+  // result.data.allWpPost.nodes.forEach(post => {
+  //   // Function to create pages
+  //   createPage({
+  //     // The path to which the page will be created
+  //     // path: `blog/${blog.frontmatter.slug}/`,
+  //     path: `${post.uri}`,
+  //     // The template that will be used
+  //     component: path.resolve(`src/templates/wordpress-lab.js`),
+  //     // Passing on information to the page as identifier. 
+  //     context: {
+  //       uri: post.uri,
+  //     },
+  //   })
+  // })
 }
