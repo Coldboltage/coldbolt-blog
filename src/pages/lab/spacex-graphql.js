@@ -73,11 +73,6 @@ export const query = graphql`
         id
         imageSharp {
           publicURL
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
         }
         image
         name
