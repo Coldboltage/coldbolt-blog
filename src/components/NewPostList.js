@@ -4,10 +4,10 @@ import {Link} from "gatsby"
 const NewPostList = ({ blogData }) => {
     return (
         <div>
-            {blogData.map((post) => {
+            {blogData.map((post, index) => {
                 const { frontmatter: { date, title, slug } } = post
                 return (
-                    <div className="new-post">
+                    <div key={index} className="new-post">
                         <Link to={`/${slug}`} className="post-title">{title}</Link>
                         <p className="post-date">{date}</p>
                     </div>

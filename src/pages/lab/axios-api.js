@@ -15,7 +15,7 @@ const AxiosApi = () => {
 
     return (
         <Layout>
-            <div className="container blog-title" id="page-container">
+            <div className="container blog-title page-container" >
                 <h1>Axios API</h1>
                 <p>This is a test to see if I can use the Axios API which I have no idea if I can get work so that'll be good craic.</p>
                 <a id="apiButton" className="waves-effect waves-light btn-small" onClick={apiCall} >Api Call</a>

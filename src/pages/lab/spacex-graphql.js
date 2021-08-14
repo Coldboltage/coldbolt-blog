@@ -17,7 +17,7 @@ const SpaceX = ({
 
   return (
     <Layout>
-      <div className="container">
+      <div className="container page-container">
         <h1 className="blog-title">SpaceX and GraphQL</h1>
         <p>
           This page is to test if I can programatically make pages with many

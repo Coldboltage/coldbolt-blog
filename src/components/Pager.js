@@ -8,17 +8,15 @@ const Pager = ({ pageContext }) => {
     <div className={styles.pager}>
       <div>
         {previousPagePath && (
-          <span>
             <Link to={previousPagePath}>Previous</Link>
-          </span>
         )}
       </div>
-
+      <div>
+        {pageContext.humanPageNumber} / {pageContext.limit}
+      </div>
       <div>
         {nextPagePath && (
-          <span>
             <Link to={nextPagePath}>Next</Link>
-          </span>
         )}
       </div>
     </div>

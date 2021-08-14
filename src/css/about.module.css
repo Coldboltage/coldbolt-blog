@@ -16,16 +16,13 @@
 
 /* About us Page */
 
-#test {
-    max-width: 800px;
-}
 
 /* #introduction {
     padding-top: 20px;
 } */
 
-#test {
-    display: block;
+.test {
+    /* display: block; */
     margin: 50px auto;
     max-width: 800px;
     width: 100%;
