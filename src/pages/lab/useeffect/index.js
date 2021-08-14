@@ -10,7 +10,7 @@ const UsingEffect = () => {
   const [query, setQuery] = useState("")
   // let callOne = "https://api.lolpros.gg/es/teams/fnatic"
   const [team, setTeam] = useState("")
-  const [url, setUrl] = useState(`https://api.lolpros.gg/es/teams/`)
+  const [url, setUrl] = useState(`https://api.lolpros.gg/es/teams/${team}`)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
   const [showError, setShowError] = useState(false)
@@ -49,7 +49,6 @@ const UsingEffect = () => {
   }, [url])
 
   useEffect(() => {
-    console.log("Fired within function")
     if (players.length > 1) {
       let newNumber = 0
       for (let i = 0; players.length > i; i++) {
@@ -63,7 +62,7 @@ const UsingEffect = () => {
       setLpCalc(newNumber)
     }
     setLoading(false)
-  }, [query])
+  }, [players])
 
   //   const loadData = async () => {
   //     setLoading(true)
@@ -133,8 +132,6 @@ const UsingEffect = () => {
 
         <button
           onClick={() => {
-            try {
-            } catch (error) {}
             setTeam(query)
             setUrl(`https://api.lolpros.gg/es/teams/${query}`)
             setQuery("")
