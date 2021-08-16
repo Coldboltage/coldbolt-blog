@@ -15,6 +15,10 @@ const UsingEffect = () => {
   const [error, setError] = useState(false)
   const [showError, setShowError] = useState(false)
 
+  console.log(typeof(showError))
+  console.log(typeof(url))
+  console.log(typeof(team))
+
   useEffect(() => {
     async function fetchAPI() {
       setLoading(true)
