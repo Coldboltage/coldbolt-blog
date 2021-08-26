@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../../components/layout"
 import * as styles from "../../css/spacex.module.css"
-import Image from "gatsby-image"
 import { graphql } from "gatsby"
 
 const SpaceX = ({
@@ -13,7 +12,7 @@ const SpaceX = ({
   const newShips = filteredShips.filter(
     ship => ship.imageSharp.publicURL !== null
   )
-  // console.log(newShips)
+  console.log(newShips)
 
   return (
     <Layout>
@@ -41,7 +40,7 @@ const SpaceX = ({
             } = ship
             return (
               <div key={id}>
-                <img src={publicURL} className={styles.ships}/>
+                <img src={publicURL} className={styles.ships} alt={ship.name}/>
               </div>
             )
           })}

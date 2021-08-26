@@ -13,7 +13,7 @@ const BlogTemplate = ({ data }) => {
                     <h1 className={styles.blogTitle}>{title}</h1>
                     <h5 className={styles.center}>{date}</h5>
                 </div>
-                <a className="waves-effect waves-light btn-small" onClick={() => navigate(-1)}>Back</a>
+                <p className="waves-effect waves-light btn-small" onClick={() => navigate(-1)}>Back</p>
                 <div id={styles.blogFeaturedImage}>
                     <Img id={styles.blogFeaturedImage} fluid={image.childImageSharp.fluid}/>
                 </div>
