@@ -58,7 +58,6 @@ const UsingEffect = () => {
         }
       }
       newNumber = newNumber / players.length
-
       setLpCalc(newNumber)
     }
     setLoading(false)
