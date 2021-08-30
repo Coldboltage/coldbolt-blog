@@ -15,16 +15,12 @@ const UsingEffect = () => {
   const [error, setError] = useState(false)
   const [showError, setShowError] = useState(false)
 
-  console.log(typeof(showError))
-  console.log(typeof(url))
-  console.log(typeof(team))
-
   useEffect(() => {
     async function fetchAPI() {
       setLoading(true)
       console.log("firing loadData")
       const response = await fetch(url)
-      // If this is false, we got ourselves a 404 error
+      // If this is true, we got ourselves a 404 error
       if (response.status === 404) {
         console.log(response.statusText)
         setError(true)
