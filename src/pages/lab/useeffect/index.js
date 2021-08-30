@@ -19,7 +19,11 @@ const UsingEffect = () => {
     async function fetchAPI() {
       setLoading(true)
       console.log("firing loadData")
-      const response = await fetch(url)
+      const response = await fetch(url, {
+        headers: {
+          "Access-Control-Allow-Origin": "*"
+        }
+      })
       // If this is true, we got ourselves a 404 error
       if (response.status === 404) {
         console.log(response.statusText)
