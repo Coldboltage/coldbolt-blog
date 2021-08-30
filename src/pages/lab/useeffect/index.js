@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Layout from "../../../components/layout"
-import { CircularProgress } from "@material-ui/core"
+import { CircularProgress, colors } from "@material-ui/core"
 import * as styles from "../../../css/useeffect.module.css"
 
 const UsingEffect = () => {
@@ -9,7 +9,7 @@ const UsingEffect = () => {
   const [lpCalc, setLpCalc] = useState(null)
   const [query, setQuery] = useState("")
   // let callOne = "https://api.lolpros.gg/es/teams/fnatic"
-  const [team, setTeam] = useState("")
+  const [team, setTeam] = useState("fnatic")
   const [url, setUrl] = useState(`https://api.lolpros.gg/es/teams/${team}`)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)
@@ -18,11 +18,9 @@ const UsingEffect = () => {
   useEffect(() => {
     async function fetchAPI() {
       setLoading(true)
-      console.log("firing loadData")
+      console.log(url)
       const response = await fetch(url, {
-        headers: {
-          "Access-Control-Allow-Origin": "*"
-        }
+        mode: "cors",
       })
       // If this is true, we got ourselves a 404 error
       if (response.status === 404) {
