@@ -20,8 +20,6 @@ const UsingEffect = () => {
     addLp()
   }, [players])
 
-  console.log(url)
-
   const loadData = async () => {
     setLoading(true)
     const response = await fetch(url)
