@@ -19,9 +19,7 @@ const UsingEffect = () => {
     async function fetchAPI() {
       setLoading(true)
       console.log(url)
-      const response = await fetch(url, {
-        mode: "cors",
-      })
+      const response = await fetch(url)
       // If this is true, we got ourselves a 404 error
       if (response.status === 404) {
         console.log(response.statusText)

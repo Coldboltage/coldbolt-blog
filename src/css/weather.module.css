@@ -1,0 +1,32 @@
+.inputDiv {
+    margin: 0 auto
+}
+
+.inputStyle {
+    display: inline-block;
+    text-align: center;
+    margin: auto !important;
+    max-width: 300px;    
+}
+
+table {
+
+    margin-top: 50px !important;
+    border-top: 1px solid #ddd;
+}
+
+.tableStyle {
+
+    width: 800px;
+    margin: 0 auto;
+}
+
+.tableStyle td {
+    width: 266px;
+
+}
+
+.icons {
+    padding-right: 20px;
+    font-size: 26px;
+}
