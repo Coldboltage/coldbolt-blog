@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useCallback } from "react"
 import Layout from "../../components/layout"
-// import SEO from "../../components/seo"
+import SEO from "../../components/seo"
 import * as styles from "../../css/weather.module.css"
 import { FaTemperatureHigh } from "react-icons/fa"
 import { FaChevronDown } from "react-icons/fa"
@@ -44,6 +44,7 @@ const Weather = () => {
 
   return (
     <Layout>
+      <SEO description="This page tests out the weather app. I used the Open Weather API for this"/>
       <div className={`page-container`}>
         <div>
           <h1 className="blog-title">Current Weather App</h1>
@@ -74,30 +75,28 @@ const Weather = () => {
                 <tr>
                   <td>Temp</td>
                   <td><span className={styles.icons}><FaTemperatureHigh/></span></td>
-                  <td>{weatherData.temp}</td>
+                  <td>{weatherData.temp}'c</td>
                 </tr>
                 <tr>
                   <td>Lowest Temp</td>
                   <td><span className={styles.icons}><FaChevronDown/></span></td>
-                  <td>{weatherData.tempMin}</td>
+                  <td>{weatherData.tempMin}'c</td>
                 </tr>
                 <tr>
                   <td>Highest Temp</td>
                   <td><span className={styles.icons}><FaChevronUp/></span></td>
-
-                  <td>{weatherData.tempMax}</td>
+                  <td>{weatherData.tempMax}'c</td>
                 </tr>
                 <tr>
                   <td>Feels like</td>
                   <td><span className={styles.icons}><GiThermometerHot/></span></td>
-
-                  <td>{weatherData.feelsLike}</td>
+                  <td>{weatherData.feelsLike}'c</td>
                 </tr>
                 <tr>
                   <td>Humidity</td>
                   <td><span className={styles.icons}><WiHumidity/></span></td>
 
-                  <td>{weatherData.humidity}</td>
+                  <td>{weatherData.humidity}%</td>
                 </tr>
               </tbody>
             </table>
