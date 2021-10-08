@@ -42,6 +42,7 @@ export const query = graphql`
       nodes {
         excerpt(format: PLAIN, pruneLength: 600)
         frontmatter {
+          category
           title
           slug
           date(formatString: "DD MMMM YYYY")
