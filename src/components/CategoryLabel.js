@@ -1,5 +1,5 @@
 import React from 'react'
-import * as styles from "../css/CategoryLabel.module.css"
+import * as styles from "../css/categoryLabel.module.css"
 import {Link} from "gatsby"
 
 const CategoryLabel = ({category}) => {
