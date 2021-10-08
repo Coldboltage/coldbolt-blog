@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import CategoryLabel from './CategoryLabel'
 
 const PostList = () => {
   const data = useStaticQuery(graphql`
@@ -14,6 +15,7 @@ const PostList = () => {
             title
             date(formatString: "DD MMM YYYY")
             slug
+            category
           }
         }
       }
@@ -29,7 +31,7 @@ const PostList = () => {
       {posts.map((post, index) => {
         const {
           excerpt,
-          frontmatter: { date, title, slug },
+          frontmatter: { date, title, slug,category },
         } = post
         return (
           <div key={index} className="new-post">
@@ -37,6 +39,8 @@ const PostList = () => {
               {title}
             </Link>
             <p className="post-date">{date}</p>
+            {category && <CategoryLabel category={category} />}
+
             <p
               dangerouslySetInnerHTML={{ __html: excerpt }}
               className="post-content"
