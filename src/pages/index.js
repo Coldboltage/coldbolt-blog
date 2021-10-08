@@ -35,7 +35,6 @@ const IndexPage = () => {
               <li>GatsbyJS</li>
               <li>React</li>
               <li>Meteor</li>
-              <li>Memes</li>
             </ul>
           </div>
           <div>
