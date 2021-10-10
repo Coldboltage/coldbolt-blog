@@ -13,7 +13,7 @@ const AboutPage = ({ data }) => {
       <div className={styles.blogContainer}>
         <h1 className="blog-title">About Page</h1>
         <div className={styles.test}>
-          <GatsbyImage image={gatsbyImageData} />
+          <GatsbyImage image={gatsbyImageData} alt="Alan Reid's face"/>
         </div>
         <div id={styles.introduction}>
           <p className="post-content" id>My name is Alan Reid, 29, and I'm from Bangor Northern Ireland. I'm slowly getting the hang of developing but I think what I'm looking to get a better grasp of, is my control of life. I love to help and I love to get things done. When I see something I can get done now, I usually work on that so to finish it asap. This slows my progress as a developer down and so I have decided on my 6am wakes again. It's helping, no one is bothering me at my time of need. Maybe this is just something weird that I have in my head but honestly, I'm slowing getting better. </p>

@@ -7,7 +7,6 @@ import PostList from "../components/PostList"
 
 const IndexPage = () => {
   // const { allMarkdownRemark: { posts } } = data;
-  // console.log(posts)
 
   // const postList = posts.map((post) => {
   //   const {excerpt, html, frontmatter:{date, slug, title}} = post

@@ -40,6 +40,7 @@ const Image = () => {
     <Link to="/about">
       <GatsbyImage
         image={newImage}
+        alt = "Alan Reid's face"
         // className="profile"
       />
     </Link>

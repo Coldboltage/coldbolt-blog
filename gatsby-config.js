@@ -56,7 +56,7 @@ module.exports = {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
-          google: [
+          google2: [
             {
               family: `Cardo`,
             }

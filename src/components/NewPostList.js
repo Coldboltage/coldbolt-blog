@@ -9,7 +9,7 @@ const NewPostList = ({ blogData }) => {
                 const { frontmatter: { date, title, slug, category } } = post
                 return (
                     <div key={index} className="new-post">
-                        <Link to={`/${slug}`} className="post-title">{title}</Link>
+                        <Link to={`/${slug}/`} className="post-title">{title}</Link>
                         <p className="post-date">{date}</p>
                         {category && <CategoryLabel category={category}/>}
                     </div>

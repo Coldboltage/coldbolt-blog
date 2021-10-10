@@ -16,7 +16,7 @@ const BlogTemplate = ({ data }) => {
                 </div>
                 <p className="waves-effect waves-light btn-small" onClick={() => navigate(-1)}>Back</p>
                 <div id={styles.blogFeaturedImage}>
-                    <GatsbyImage id={styles.blogFeaturedImage} image={newImage}/>
+                    <GatsbyImage id={styles.blogFeaturedImage} image={newImage} alt="blog image"/>
                 </div>
                 <div className={styles.blogP} dangerouslySetInnerHTML={{ __html: html}}></div>
             </div>
