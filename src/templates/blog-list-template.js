@@ -7,7 +7,6 @@ import * as styles from "../css/blog-template.module.css"
 import Pager from "../components/Pager"
 
 const BlogListTemplate = ({ data, pageContext }) => {
-  console.log(pageContext)
     return (
         <Layout>
             <SEO title="Blog" description="Do you want to know more about Alan Reid? Here's the place to find his daily thoughts per day" />

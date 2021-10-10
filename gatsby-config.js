@@ -48,12 +48,6 @@ module.exports = {
               wrapperStyle: "margin: 20px"
             }
           },
-          {
-            resolve: `gatsby-remark-image-attributes`,
-            options: {
-              styleAttributes: true,
-            }
-          },
         ]
       },
     },

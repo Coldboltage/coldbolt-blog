@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import * as styles from "../css/blog-template.module.css"
 
 const Pager = ({ pageContext }) => {
-  console.log(pageContext)
   const { previousPagePath, nextPagePath } = pageContext
   return (
     <div className={styles.pager}>

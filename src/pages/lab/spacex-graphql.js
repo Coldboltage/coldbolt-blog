@@ -12,7 +12,6 @@ const SpaceX = ({
   const newShips = filteredShips.filter(
     ship => ship.imageSharp.publicURL !== null
   )
-  console.log(newShips)
 
   return (
     <Layout>
