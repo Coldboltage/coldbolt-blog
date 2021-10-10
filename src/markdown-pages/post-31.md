@@ -1,7 +1,7 @@
 ---
-slug: "changing-life-plans" 
-date: "2021-10-09"
-title: "Changing life plans."
+slug: "updated-gatsby-v3" 
+date: "2021-10-10"
+title: "Updated to Gatsby v3!"
 image: "../images/rocks-website-update.jpg"
 category: "coding"
 ---
