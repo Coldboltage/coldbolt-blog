@@ -23,7 +23,7 @@ const Image = () => {
               quality: 80
               formats: AUTO
               layout: CONSTRAINED
-              placeholder: BLURRED
+              placeholder: TRACED_SVG
             )
         }
       }

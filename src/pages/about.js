@@ -59,6 +59,7 @@ export const data = graphql`
           quality: 80
           formats: [AVIF, AUTO]
           layout: CONSTRAINED
+          placeholder: TRACED_SVG
         )
       }
     }
