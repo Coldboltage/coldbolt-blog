@@ -62,31 +62,28 @@ const BlogListTemplateLife = ({ data, pageContext }) => {
   )
 }
 
-export const query = graphql`
-  query($skip: Int!, $limit: Int!, $category: String) {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      skip: $skip
-      limit: $limit
-      filter: { frontmatter: { category: { eq: $category } } }
-    ) {
-      nodes {
-        excerpt(format: PLAIN, pruneLength: 600)
-        frontmatter {
-          title
-          slug
-          date(formatString: "DD MMMM YYYY")
-          image {
-            childImageSharp {
-              fluid {
-                src
-              }
-            }
+export const query = graphql`query ($skip: Int!, $limit: Int!, $category: String) {
+  allMarkdownRemark(
+    sort: {fields: [frontmatter___date], order: DESC}
+    skip: $skip
+    limit: $limit
+    filter: {frontmatter: {category: {eq: $category}}}
+  ) {
+    nodes {
+      excerpt(format: PLAIN, pruneLength: 600)
+      frontmatter {
+        title
+        slug
+        date(formatString: "DD MMMM YYYY")
+        image {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
           }
         }
       }
     }
   }
+}
 `
 
 export default BlogListTemplateLife

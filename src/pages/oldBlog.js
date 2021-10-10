@@ -28,26 +28,23 @@ const Blog = ({ data }) => {
     </Layout>
   )
 }
-export const query = graphql`
-  query blogPostDesc {
-    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
-      nodes {
-        excerpt(format: PLAIN, pruneLength: 600)
-        frontmatter {
-          title
-          slug
-          date(formatString: "DD MMMM YYYY")
-          image {
-            childImageSharp {
-              fluid {
-                src
-              }
-            }
+export const query = graphql`query blogPostDesc {
+  allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+    nodes {
+      excerpt(format: PLAIN, pruneLength: 600)
+      frontmatter {
+        title
+        slug
+        date(formatString: "DD MMMM YYYY")
+        image {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
           }
         }
       }
     }
   }
+}
 `
 
 export default Blog
