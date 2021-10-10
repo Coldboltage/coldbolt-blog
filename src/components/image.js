@@ -21,7 +21,7 @@ const Image = () => {
             gatsbyImageData(
               width: 350
               quality: 80
-              formats: [AVIF, AUTO]
+              formats: AUTO
               layout: CONSTRAINED
               placeholder: BLURRED
             )
