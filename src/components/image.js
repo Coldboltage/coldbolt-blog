@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -19,7 +19,7 @@ const Image = () => {
       placeholderImage: file(relativePath: { eq: "alanprofile.jpg" }) {
         childImageSharp {
             gatsbyImageData(
-              width: 350
+              width: 150
               quality: 80
               formats: AUTO
               layout: CONSTRAINED
@@ -30,6 +30,8 @@ const Image = () => {
     }
   `)
 
+  const newImage = getImage(data.placeholderImage.childImageSharp.gatsbyImageData)
+
   if (!data?.placeholderImage?.childImageSharp?.gatsbyImageData) {
     return <div>Picture not found</div>
   }
@@ -37,8 +39,8 @@ const Image = () => {
   return (
     <Link to="/about">
       <GatsbyImage
-        image={data.placeholderImage.childImageSharp.gatsbyImageData}
-        className="profile"
+        image={newImage}
+        // className="profile"
       />
     </Link>
   )

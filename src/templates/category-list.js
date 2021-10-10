@@ -7,7 +7,6 @@ import * as styles from "../css/blog-template.module.css"
 import Pager from "../components/Pager"
 
 const BlogListTemplateLife = ({ data, pageContext }) => {
-  console.log(pageContext)
   const str = pageContext.category
   const str2 = str.charAt(0).toUpperCase() + str.slice(1)
   return (
