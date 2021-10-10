@@ -1,11 +1,12 @@
 import React from 'react'
 import { graphql, navigate } from "gatsby"
 import Layout from "../components/layout"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as styles from "../css/blog-template.module.css"
 
 const BlogTemplate = ({ data }) => {
     const { blog: { html, frontmatter: { date, title, image } } } = data
+    const newImage = getImage(image)
     return (
         <Layout>
             <div className={`${styles.blogContainer}`} id="page-container" >
@@ -15,7 +16,7 @@ const BlogTemplate = ({ data }) => {
                 </div>
                 <p className="waves-effect waves-light btn-small" onClick={() => navigate(-1)}>Back</p>
                 <div id={styles.blogFeaturedImage}>
-                    <Img id={styles.blogFeaturedImage} fluid={image.childImageSharp.fluid}/>
+                    <GatsbyImage id={styles.blogFeaturedImage} image={newImage}/>
                 </div>
                 <div className={styles.blogP} dangerouslySetInnerHTML={{ __html: html}}></div>
             </div>
@@ -32,9 +33,13 @@ export const query = graphql`
                 title
                 image {
                     childImageSharp {
-                      fluid (maxWidth: 800, quality: 80){
-                        ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                      }
+                        gatsbyImageData(
+                            quality: 80
+                            layout: CONSTRAINED
+                            width: 800
+                            formats: [AVIF, AUTO]
+                            placeholder: TRACED_SVG
+                            )
                     }
                 }
             }
