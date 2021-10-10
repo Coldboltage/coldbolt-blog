@@ -23,6 +23,7 @@ const Image = () => {
               quality: 80
               formats: [AVIF, AUTO]
               layout: CONSTRAINED
+              placeholder: BLURRED
             )
         }
       }
