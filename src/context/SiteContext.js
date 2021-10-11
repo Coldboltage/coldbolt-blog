@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 
-const AppContext = React.createContext()
+const AppContext = React.createContext({
+    defaultState: true,
+})
 
 const AppProvider  = ({children}) => {
     const [defaultState, setDefaultState] = useState(true)

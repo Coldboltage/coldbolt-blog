@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { useState, useContext } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
 import { AppContext } from "../context/SiteContext"
@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
           <Header />
           <main
             style={{ paddingTop: "40px", paddingBottom: "40px" }}
-            className={`pageHeight ${context.defaultState === false ? styles.dark : styles.light}`}
+            className={`${context.defaultState === false ? styles.dark : ""} pageHeight`}
           >
             {children}
           </main>
