@@ -17,8 +17,8 @@ const Layout = ({ children }) => {
       {context => (
         <div>
           <Header />
-          {/* {console.log(`Darkmode is set to: ${context.darkMode}`)}
-          {console.log(`localStorage is set to ${typeof window !== "undefined" ? localStorage.getItem("dark") : "Can't render"}`)} */}
+          {console.log(`Darkmode is set to: ${context.darkMode}`)}
+          {console.log(`localStorage is set to ${typeof window !== "undefined" ? localStorage.getItem("dark") : "Can't render"}`)}
           <main
             style={{ paddingTop: "40px", paddingBottom: "40px" }}
             className={`${context.darkMode === true ? styles.dark : ""} pageHeight`}

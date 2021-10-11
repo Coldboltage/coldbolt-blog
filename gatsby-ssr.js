@@ -12,5 +12,5 @@ import React from "react"
 import {AppProvider} from "./src/context/SiteContext"
 
 export const wrapRootElement = ({element}) => {
-    <AppProvider>{element}</AppProvider>
+    return <AppProvider>{element}</AppProvider>
 }

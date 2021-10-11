@@ -11,9 +11,7 @@ if (typeof window !== "undefined") {
   }
 }
 
-const AppContext = React.createContext({
-  defaultState: temp,
-})
+const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(temp)
@@ -26,6 +24,7 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem("dark" , JSON.stringify(darkMode))
+    console.log("use effect fired")
   }, [darkMode])
   
   return (
