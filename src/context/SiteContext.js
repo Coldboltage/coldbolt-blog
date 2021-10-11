@@ -26,7 +26,9 @@ const AppProvider = ({ children }) => {
     setDarkMode(!darkMode)
   }
 
-
+  useEffect(() => {
+    setDarkMode(temp)
+  } , [])
   return (
     <AppContext.Provider value={{ darkMode, setDarkMode, changeTheme }}>
       {children}
