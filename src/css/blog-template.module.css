@@ -9,12 +9,22 @@
     font-size: 17px;
 }
 
+.blogP p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 100px;
+}
+
 .blogHeader {
     padding-bottom: 20px;
 }
 
 .center, .blogTitle {
     text-align: center;
+}
+
+.blogTitle:first-child {
+    margin-top:0px;
+    padding-top: 30px;
 }
 
 #blogFeaturedImage {

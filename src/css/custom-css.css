@@ -1,3 +1,11 @@
+.dark {
+  color: #fff;
+}
+
+.pageHeight {
+  min-height: 90vh;
+}
+
 body {
   font-family: 'Cardo', serif;
 }
@@ -11,7 +19,7 @@ header {
   min-height: 40px;
   max-height: 100px;
   background-color: black;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   padding: 10px 0px;
 }
 
@@ -25,10 +33,6 @@ header {
   align-items: center;
   height: 100%;
   justify-content: space-between;
-}
-
-.navBar > .flex {
-  
 }
 
 .rightSide #rightLinks li a, .leftSide a{
@@ -83,6 +87,7 @@ header {
 
 .blog-title {
   text-align: center;
+  margin-top: 0;
 }
 
 /* Profile Picture */
@@ -157,7 +162,7 @@ header {
 }
 
 .page-footer {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   text-align: center;
   padding: 20px
 }
