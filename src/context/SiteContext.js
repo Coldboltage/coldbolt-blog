@@ -4,12 +4,14 @@ const AppContext = React.createContext({
   defaultState: true,
 })
 
-let temp;
+let temp
 
-if (localStorage.getItem("dark") === null) {
-  localStorage.setItem("dark", "false")
-} else {
-  temp = JSON.parse(localStorage.getItem("dark"))
+if (typeof window !== "undefined") {
+  if (localStorage.getItem("dark") === null) {
+    localStorage.setItem("dark", "false")
+  } else {
+    temp = JSON.parse(localStorage.getItem("dark"))
+  }
 }
 
 console.log(temp)
