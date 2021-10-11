@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react"
 
 
-const AppContext = React.createContext({
-  defaultState: true,
-})
-
 let temp
 
 if (typeof window !== "undefined") {
@@ -14,6 +10,10 @@ if (typeof window !== "undefined") {
     temp = JSON.parse(localStorage.getItem("dark"))
   }
 }
+
+const AppContext = React.createContext({
+  defaultState: temp,
+})
 
 
 const AppProvider = ({ children }) => {
