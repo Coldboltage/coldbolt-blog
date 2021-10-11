@@ -1,12 +1,23 @@
 import React, { useState, useEffect } from "react"
 
+
 const AppContext = React.createContext({
   defaultState: true,
 })
 
 let temp
 
+if (typeof window !== "undefined") {
+  if (localStorage.getItem("dark") === null) {
+    localStorage.setItem("dark", "false")
+  } else {
+    temp = JSON.parse(localStorage.getItem("dark"))
+  }
+}
+
+
 const AppProvider = ({ children }) => {
+  const [, forceUpdate] = React.useState(0);
   const [darkMode, setDarkMode] = useState(temp)
 
   const changeTheme = () => {
@@ -15,15 +26,6 @@ const AppProvider = ({ children }) => {
     setDarkMode(!darkMode)
   }
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (localStorage.getItem("dark") === null) {
-        localStorage.setItem("dark", "false")
-      } else {
-        temp = JSON.parse(localStorage.getItem("dark"))
-      }
-    }
-  }, [])
 
   return (
     <AppContext.Provider value={{ darkMode, setDarkMode, changeTheme }}>
