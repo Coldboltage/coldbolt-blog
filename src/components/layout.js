@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
           <Header />
           <main
             style={{ paddingTop: "40px", paddingBottom: "40px" }}
-            className={`${context.defaultState === false ? styles.dark : ""} pageHeight`}
+            className={`${context.darkMode === true ? styles.dark : ""} pageHeight`}
           >
             {children}
           </main>

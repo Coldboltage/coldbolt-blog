@@ -59,7 +59,7 @@ const header = () => {
                       rel="noreferrer"
                       onClick={() => context.changeTheme()}
                     >
-                      {context.defaultState === true ? <FaSun /> : <FaMoon/>}
+                      {context.darkMode === true ? <FaMoon/> : <FaSun />}
                     </a>
                   </li>
                 </ul>
