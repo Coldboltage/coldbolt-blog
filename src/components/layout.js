@@ -17,6 +17,7 @@ const Layout = ({ children }) => {
       {context => (
         <div>
           <Header />
+          {console.log(context.darkMode)}
           <main
             style={{ paddingTop: "40px", paddingBottom: "40px" }}
             className={`${context.darkMode === true ? styles.dark : ""} pageHeight`}
