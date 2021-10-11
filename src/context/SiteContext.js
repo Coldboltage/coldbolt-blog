@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 const AppContext = React.createContext({
   defaultState: true,
@@ -13,16 +13,20 @@ if (typeof window !== "undefined") {
     temp = JSON.parse(localStorage.getItem("dark"))
   }
 }
-
 console.log(temp)
 
 const AppProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(temp)
+
   const changeTheme = () => {
     const newState = JSON.stringify(!darkMode)
     localStorage.setItem("dark", newState)
     setDarkMode(!darkMode)
   }
+
+  useEffect(() => {
+    setDarkMode(temp)
+  }, [])
 
   return (
     <AppContext.Provider value={{ darkMode, setDarkMode, changeTheme }}>
