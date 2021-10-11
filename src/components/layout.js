@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
 import { AppContext } from "../context/SiteContext"
@@ -18,10 +18,16 @@ const Layout = ({ children }) => {
         <>
           <Header />
           {console.log(`Darkmode is set to: ${context.darkMode}`)}
-          {console.log(`localStorage is set to ${typeof window !== "undefined" ? localStorage.getItem("dark") : "Can't render"}`)}
+          {console.log(
+            `localStorage is set to ${
+              typeof window !== "undefined"
+                ? localStorage.getItem("dark")
+                : "Can't render"
+            }`
+          )}
           <main
             style={{ paddingTop: "40px", paddingBottom: "40px" }}
-            className={`${context.darkMode === true ? styles.dark : ""} pageHeight`}
+            className={`${context.darkMode === true && styles.dark} pageHeight`}
           >
             {children}
           </main>
