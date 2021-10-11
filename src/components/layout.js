@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
   return (
     <AppContext.Consumer>
       {context => (
-        <div>
+        <>
           <Header />
           {console.log(`Darkmode is set to: ${context.darkMode}`)}
           {console.log(`localStorage is set to ${typeof window !== "undefined" ? localStorage.getItem("dark") : "Can't render"}`)}
@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
             {` `}
             <a href="https://www.gatsbyjs.com">Gatsby</a>
           </footer>
-        </div>
+        </>
       )}
     </AppContext.Consumer>
   )

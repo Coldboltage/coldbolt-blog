@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react"
 
-
 let temp
 
 if (typeof window !== "undefined") {
@@ -23,8 +22,9 @@ const AppProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    localStorage.setItem("dark" , JSON.stringify(darkMode))
-    console.log("use effect fired")
+    console.log("####")
+    console.log(darkMode)
+    console.log(localStorage.getItem("dark"))
   }, [darkMode])
   
   return (
