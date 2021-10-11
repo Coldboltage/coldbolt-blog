@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 
 let temp
 
+console.log("alright")
 if (typeof window !== "undefined") {
   if (localStorage.getItem("dark") === null) {
     localStorage.setItem("dark", "false")
@@ -14,6 +15,7 @@ const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(temp)
+  console.log(`state made. the value of darkMode is temp. Darkmode: ${darkMode}, Temp; ${temp}`)
 
   const changeTheme = () => {
     const newState = JSON.stringify(!darkMode)
