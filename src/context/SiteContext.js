@@ -6,15 +6,6 @@ const AppContext = React.createContext({
 
 let temp
 
-if (typeof window !== "undefined") {
-  if (localStorage.getItem("dark") === null) {
-    localStorage.setItem("dark", "false")
-  } else {
-    temp = JSON.parse(localStorage.getItem("dark"))
-  }
-}
-console.log(temp)
-
 const AppProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(temp)
 
@@ -25,7 +16,13 @@ const AppProvider = ({ children }) => {
   }
 
   useEffect(() => {
-    setDarkMode(temp)
+    if (typeof window !== "undefined") {
+      if (localStorage.getItem("dark") === null) {
+        localStorage.setItem("dark", "false")
+      } else {
+        temp = JSON.parse(localStorage.getItem("dark"))
+      }
+    }
   }, [])
 
   return (
