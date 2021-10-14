@@ -8,7 +8,8 @@ const PostList = () => {
       allMarkdownRemark(
         sort: { fields: frontmatter___date, order: DESC }
         limit: 5
-      ) {
+        filter: {frontmatter: {category: {in: ["life","coding","esports"]}}}
+        ) {
         posts: nodes {
           excerpt(format: PLAIN, pruneLength: 600)
           frontmatter {
