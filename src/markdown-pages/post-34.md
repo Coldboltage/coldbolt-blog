@@ -1,6 +1,6 @@
 ---
 slug: "workout-prep" 
-date: "2021-10-14"
+date: "2021-10-14 07"
 title: "Time to build myself"
 image: "../images/weights-black-night-6am.jpg"
 category: "fitness"

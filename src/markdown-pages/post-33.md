@@ -1,6 +1,6 @@
 ---
 slug: "coding-at-six" 
-date: "2021-10-14"
+date: "2021-10-14 06"
 title: "Coding at 6am"
 image: "../images/coding-at-night.jpg"
 category: "coding"
